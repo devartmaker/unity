@@ -30,12 +30,12 @@ namespace AstronautPlayer
 
                 if (Input.GetButton("Jump"))
                 {
-                    anim.SetTrigger("jump");
+                    anim.SetTrigger("Jump");
                     moveDirection.y = jumpForce;
                 }
             }
 
-            controller.Move(moveDirection * Time.deltaTime);
+            controller.Move(moveDirection * Time.dßeltaTime);
 
             float turn = Input.GetAxis("Horizontal");
 			transform.Rotate(0, turn * turnSpeed * Time.deltaTime, 0);
